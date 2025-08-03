@@ -1,5 +1,5 @@
 async function connectToDatabase(user, password) {
-    if(user ==="joana" && password === "123456") {
+    if(user === process.env.USERDATABASE && password === process.env.PASSWORDDATABASE) {
         console.log("Conexão com o banco de Dados permitida!");
     } else {
         console.log("Não foi possível conexão com o banco de Dados!");
